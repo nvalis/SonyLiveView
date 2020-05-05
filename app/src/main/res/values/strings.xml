@@ -12,7 +12,6 @@
     <string name="title_activity_led">LEDs</string>
     <string name="title_activity_playback">Playback</string>
     <string name="title_activity_image">View Image</string>
-    <string name="title_activity_install">Install</string>
 
     <string name="type">Device type</string>
     <string name="brand">Brand</string>
