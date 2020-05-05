@@ -5,12 +5,12 @@ android {
         abortOnError false
     }
 
-    compileSdkVersion 25
+    compileSdkVersion 10
 
     defaultConfig {
         applicationId "com.github.ma1co.pmcademo.app"
         minSdkVersion 10
-        targetSdkVersion 25
+        targetSdkVersion 10
         versionCode "git -C ${projectDir} rev-list --first-parent --count HEAD".execute().text.trim().toInteger()
         versionName "git -C ${projectDir} describe --always --tags --dirty".execute().text.trim().replaceAll("^v", "")
     }
@@ -18,6 +18,13 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_6
         targetCompatibility JavaVersion.VERSION_1_6
+    }
+}
+
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all { output ->
+        outputFileName = "SonyLiveView-${output.baseName}-${variant.versionName}.apk"
     }
 }
 
