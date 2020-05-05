@@ -1,4 +1,4 @@
-package com.github.ma1co.pmcademo.app;
+package com.github.nvalis.sonyliveview;
 
 import com.sony.scalar.hardware.indicator.Light;
 

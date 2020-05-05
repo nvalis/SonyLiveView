@@ -8,7 +8,7 @@ android {
     compileSdkVersion 10
 
     defaultConfig {
-        applicationId "com.github.ma1co.pmcademo.app"
+        applicationId "com.github.nvalis.sonyliveview"
         minSdkVersion 10
         targetSdkVersion 10
         versionCode "git -C ${projectDir} rev-list --first-parent --count HEAD".execute().text.trim().toInteger()

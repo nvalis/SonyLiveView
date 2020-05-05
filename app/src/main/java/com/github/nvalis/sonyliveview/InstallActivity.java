@@ -1,4 +1,4 @@
-package com.github.ma1co.pmcademo.app;
+package com.github.nvalis.sonyliveview;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -50,7 +50,7 @@ public class InstallActivity extends BaseActivity implements AdapterView.OnItemC
     @Override
     protected void onResume() {
         super.onResume();
-        updateList(new File(Environment.getExternalStorageDirectory(), "PMCADEMO"));
+        updateList(new File(Environment.getExternalStorageDirectory(), "SonyLiveView"));
     }
 
     @Override
